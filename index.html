@@ -1,0 +1,1889 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+    <meta charset="utf-8">
+    
+    <title>ykrc17</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta property="og:type" content="website">
+<meta property="og:title" content="ykrc17">
+<meta property="og:url" content="http://ykrc17.github.io/index.html">
+<meta property="og:site_name" content="ykrc17">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ykrc17">
+    
+
+    
+
+    
+        <link rel="icon" href="/images/avatar.jpg" />
+    
+
+    <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/vendor/open-sans/styles.css">
+    <link rel="stylesheet" href="/vendor/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/vendor/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/vendor/fancybox/jquery.fancybox.css">
+    
+    
+    
+    
+
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                
+                <span class="site-title">ykrc17</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/.">首页</a>
+                
+                    <a class="main-nav-link" href="/archives">归档</a>
+                
+                    <a class="main-nav-link" href="/categories">分类</a>
+                
+                    <a class="main-nav-link" href="/tags">标签</a>
+                
+                    <a class="main-nav-link" href="/about">关于</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="/images/avatar.jpg" />
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/.">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">归档</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">分类</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">标签</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">关于</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+                
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="/images/avatar.jpg" />
+            <h2 id="name">ykrc17</h2>
+            <h3 id="title">安卓开发</h3>
+            <span id="location"><i class="fa fa-map-marker"></i>中国 · 上海</span>
+            <a id="follow" target="_blank" href="https://github.com/ykrc17/">关注我</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                43
+                <span>文章</span>
+            </div>
+            <div class="article-info-block">
+                0
+                <span>标签</span>
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    <td><a href="https://github.com/ykrc17" target="_blank" title="github"><i class="fa fa-github"></i></a></td>
+                    
+                    <td><a href="http://weibo.com/u/2845419073" target="_blank" title="weibo"><i class="fa fa-weibo"></i></a></td>
+                    
+                    <td><a href="http://steamcommunity.com/profiles/76561198104235555/" target="_blank" title="steam"><i class="fa fa-steam"></i></a></td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            <section id="main">
+    <article id="post-2016/11/git提交信息前添加分支名" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/git/2016/11/git提交信息前添加分支名/">git提交信息前添加分支名</a>
+        </h1>
+    
+
+                <div class="article-meta">
+                    
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/git/2016/11/git提交信息前添加分支名/">
+            <time datetime="2016-11-12T16:00:00.000Z" itemprop="datePublished">2016-11-13</time>
+        </a>
+    </div>
+
+
+                    
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/git/">git</a>
+    </div>
+
+                    
+                </div>
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h3 id="为什么要在提交中添加分支名"><a href="#为什么要在提交中添加分支名" class="headerlink" title="为什么要在提交中添加分支名"></a>为什么要在提交中添加分支名</h3><p>因为git不会在提交中存储分支，只有在合并时才会在提交信息中写入分支名，如果我是林纳斯，我早把这功能加上了。</p>
+<h3 id="如何添加"><a href="#如何添加" class="headerlink" title="如何添加"></a>如何添加</h3><p>在你的项目中，找到<code>.git/hooks/commit-msg</code>文件（别跟我说没有，没有你自己建一个），在<code>commit-msg</code>中输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">#!/bin/sh</div><div class="line">branch=$(git symbolic-ref HEAD -q --short)</div><div class="line">msg=$(cat $1)</div><div class="line">echo &quot;$branch: $msg&quot; &gt; $1</div></pre></td></tr></table></figure></p>
+<h3 id="解释原理"><a href="#解释原理" class="headerlink" title="解释原理"></a>解释原理</h3><p>git在提交前，会先调用<code>commit-msg</code>，就相当于触发器、拦截器、task，随便你怎么说都行，但在这里叫hooks。</p>
+<p>提交时，会把提交信息存在一个文件中，文件名作为第一个参数传入<code>commit-msg</code>，你只要读这个文件，就能读到提交信息，然后把分支名加上就行了。</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://ykrc17.github.io/git/2016/11/git提交信息前添加分支名/" data-id="civgrbpnb002lo4v538ukjxqh" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="/git/2016/11/git提交信息前添加分支名/#comments" class="article-comment-link">评论</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-2016/06/19-浏览器首页竟然被劫持了" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/互联网/2016/06/19-浏览器首页竟然被劫持了/">浏览器主页竟然被劫持了</a>
+        </h1>
+    
+
+                <div class="article-meta">
+                    
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/互联网/2016/06/19-浏览器首页竟然被劫持了/">
+            <time datetime="2016-06-18T16:00:00.000Z" itemprop="datePublished">2016-06-19</time>
+        </a>
+    </div>
+
+
+                    
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/互联网/">互联网</a>
+    </div>
+
+                    
+                </div>
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h3 id="被劫持"><a href="#被劫持" class="headerlink" title="被劫持"></a>被劫持</h3><p>这几天上网的时候，每次打开chrome浏览器都会打开一个奇怪的导航网站，我的主页不会被人劫持了吧，上次我的主页被劫持那还是在用IE6的时候呢。</p>
+<p>我点开chrome设置，设置中的主页仍然是<code>新标签页</code>，而且以前也从未遇见过chrome的主页被修改的情况，难道说是chrome被人攻破了？能攻破chrome的人肯定能去比导航网站更好的公司吧，嗯肯定是的。</p>
+<h3 id="哭笑不得的结果"><a href="#哭笑不得的结果" class="headerlink" title="哭笑不得的结果"></a>哭笑不得的结果</h3><p>我打开IE，主页却没有被修改，真是见鬼了，肯定IE比chrome更容易攻破啊，结果IE却没事，那肯定是chrome的哪个文件被篡改了，而不是我整台电脑的主页都被劫持。</p>
+<p>打开chrome的快捷方式，结果发现chrome的快捷方式中多了一个参数，而这个参数就是奇怪导航网站的网址。这下我就傻了，竟然被这么简单的修改了我的主页，赶紧把这个快捷方式中的参数去了，免得被其他人看见笑话我。</p>
+<p>当然，也学到了小技巧，跑到别人家里的时候，把别人常用浏览器的快捷方式改了，就相当于改主页了。</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://ykrc17.github.io/互联网/2016/06/19-浏览器首页竟然被劫持了/" data-id="civgrbpn8002fo4v5i6zo4xip" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="/互联网/2016/06/19-浏览器首页竟然被劫持了/#comments" class="article-comment-link">评论</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-2016/05/07-PhotoshopCC2014启动界面修改" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/软件/2016/05/07-PhotoshopCC2014启动界面修改/">Photoshop CC 2014启动界面修改</a>
+        </h1>
+    
+
+                <div class="article-meta">
+                    
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/软件/2016/05/07-PhotoshopCC2014启动界面修改/">
+            <time datetime="2016-05-06T16:00:00.000Z" itemprop="datePublished">2016-05-07</time>
+        </a>
+    </div>
+
+
+                    
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/软件/">软件</a>
+    </div>
+
+                    
+                </div>
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h3 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h3><p>前几天刷微博的时候，看到平板姬的这条<a href="http://weibo.com/2029177923/Dsq44uUxN" target="_blank" rel="external">微博</a>：</p>
+<p><img src="/images/2016-5-7.01.png" alt=""></p>
+<p>联想到自己的PS CC的官方启动界面太过文艺，不符合本大爷的口味，所以心血来潮，想要给PS的启动界面换个血。</p>
+<h3 id="经过"><a href="#经过" class="headerlink" title="经过"></a>经过</h3><p>PS CC 2014，被一些人称作PS 15，这实在是太有迷惑性了，找到一个自称适用于PS 14的启动界面修改工具，结果根本改不了PS CC 2014，在找工具的时候就走了不少弯路。</p>
+<p>之后在google上找到了国际友人提供的工具，可以修改PS CC 2014，使用方法如下：</p>
+<ol>
+<li>下载工具，并解压</li>
+<li>打开PS的安装目录，将Resources目录拷贝至工具的pscc2014Icon目录下</li>
+<li>运行<code>Extract.cmd</code>，等待提取完成</li>
+<li>找到提取文件中High和Low目录中的<code>SplashExtendedBackground_s0.png</code>。<code>SplashBackground_s0.png</code>不会影响启动界面，所以可以不用修改。<br><img src="/images/2016-5-7.02.png" alt=""></li>
+<li>将自己的图片放入<code>SplashExtendedBackground_s0.png</code>，以PS CC 2014为例，需要把自己的图片大小调整为<code>1484*788</code><br><img src="/images/2016-5-7.03.png" alt=""></li>
+<li>运行<code>Pack.cmd</code>，将打包好的Resources目录替换PS安装目录中的Resources目录</li>
+<li>Enjoy</li>
+</ol>
+<h3 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h3><p><img src="/images/2016-5-7.04.png" alt=""></p>
+<h3 id="工具下载"><a href="#工具下载" class="headerlink" title="工具下载"></a>工具下载</h3><p>自古江湖流传着“留图不留种，菊花万人捅”的规矩，为了保住菊花，自然要附上链接了。</p>
+<p>Photoshop CC Splash Screen Extractor：<br><a href="http://rgho.st/8p5dL66JY" target="_blank" rel="external">下载地址</a><br><a href="https://www.youtube.com/watch?v=cHkeFfzyw_o" target="_blank" rel="external">原文链接</a></p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://ykrc17.github.io/软件/2016/05/07-PhotoshopCC2014启动界面修改/" data-id="civgrbpna002jo4v51w9huqv7" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="/软件/2016/05/07-PhotoshopCC2014启动界面修改/#comments" class="article-comment-link">评论</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-2016/04/29-如何判断一个页面是WebView" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/Android/2016/04/29-如何判断一个页面是WebView/">如何判断一个页面是WebView</a>
+        </h1>
+    
+
+                <div class="article-meta">
+                    
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/Android/2016/04/29-如何判断一个页面是WebView/">
+            <time datetime="2016-04-28T16:00:00.000Z" itemprop="datePublished">2016-04-29</time>
+        </a>
+    </div>
+
+
+                    
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Android/">Android</a>
+    </div>
+
+                    
+                </div>
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h3 id="简单方法"><a href="#简单方法" class="headerlink" title="简单方法"></a>简单方法</h3><p>通常情况下，开发者会禁止在WebView中长按，因为长按相当于浏览器中打开菜单。<br>长按页面中的按钮，会发生两种情况：</p>
+<ul>
+<li>有些应用没有禁止长按，就会出现如下状况，就知道是WebView了：</li>
+</ul>
+<p><img src="/images/2016-4-29.01.png" alt="id"></p>
+<ul>
+<li>禁用了长按的应用，在WebView中长按按钮则不会出现点击效果。</li>
+</ul>
+<h3 id="普通方法"><a href="#普通方法" class="headerlink" title="普通方法"></a>普通方法</h3><p>打开<code>设置-&gt;开发人员选项-&gt;硬件-&gt;调试GPU过度绘制</code>，WebView中不会显示过度绘制。</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://ykrc17.github.io/Android/2016/04/29-如何判断一个页面是WebView/" data-id="civgrbpn9002ho4v504vmyhv3" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="/Android/2016/04/29-如何判断一个页面是WebView/#comments" class="article-comment-link">评论</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-2016/04/21-使用Hexo和GithubPages搭建博客" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/互联网/2016/04/21-使用Hexo和GithubPages搭建博客/">使用Hexo和GithubPages搭建博客</a>
+        </h1>
+    
+
+                <div class="article-meta">
+                    
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/互联网/2016/04/21-使用Hexo和GithubPages搭建博客/">
+            <time datetime="2016-04-20T16:00:00.000Z" itemprop="datePublished">2016-04-21</time>
+        </a>
+    </div>
+
+
+                    
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/互联网/">互联网</a>
+    </div>
+
+                    
+                </div>
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <blockquote>
+<p>最近把之前的博客迁移到GithubPages这边，以后就不用付服务器的年租费了。本文就讲讲怎么通过Hexo和GithubPages搭建博客的</p>
+</blockquote>
+<h3 id="GithubPages"><a href="#GithubPages" class="headerlink" title="GithubPages"></a>GithubPages</h3><p>GithubPages类似于github中以raw的方式访问仓库中的文件，允许你通过http的方式访问该仓库中的文件。但是跟raw不同，raw不会设置content-type，所以打开html文件会显示源码，而githubPages打开html文件，会打开网页。</p>
+<h3 id="创建GithubPages"><a href="#创建GithubPages" class="headerlink" title="创建GithubPages"></a>创建GithubPages</h3><ol>
+<li>打开github</li>
+<li>创建一个名为<code>{你的用户名}.github.io</code>的仓库</li>
+<li>在地址栏里<code>http://{你的用户名}.github.io/</code>就能访问你的githubPages了</li>
+</ol>
+<h3 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h3><p>Hexo能够把你编写的markdown（或是其他）文件，生成为html网页，虽然比起在线的编辑器要弱一点，但是由于不需要任何后端代码，是生成的静态文件，所以可以部署在各种服务器上。  </p>
+<p>Hexo主要由四部分组成：</p>
+<ul>
+<li>Hexo库<br>通过源文件和主题生成网页</li>
+<li>配置文件<br>根目录下的<code>_config.yml</code>，配置整个站点的信息</li>
+<li>主题<br>决定了整个博客的式样和交互方式</li>
+<li>源文件<br>用来编写博客的markdown文件</li>
+</ul>
+<h3 id="使用Hexo编写博客"><a href="#使用Hexo编写博客" class="headerlink" title="使用Hexo编写博客"></a>使用Hexo编写博客</h3><ol>
+<li>安装npm和git，Windows可以安装Node.js，安装git需要把git加入PATH</li>
+<li>运行<code>npm install hexo-cli -g</code></li>
+<li>进入你想存放博客源文件的目录，运行<code>hexo init &lt;文件夹名&gt;</code>。<br>如果你已经有hexo博客源文件，那么进入博客目录，运行<code>npm install</code></li>
+<li>写一篇文章</li>
+<li>在<code>_config.yml</code>中进行部署的设置</li>
+<li>如果没安装hexo-deployer-git，运行<code>npm install hexo-deployer-git --save</code></li>
+<li>运行<code>hexo deploy -g</code></li>
+</ol>
+<h3 id="一些命令"><a href="#一些命令" class="headerlink" title="一些命令"></a>一些命令</h3><ul>
+<li><code>hexo deploy -g</code>和<code>hexo generate -d</code>都是生成后再部署</li>
+<li><code>hexo clean</code>可以删除public目录<br>虽然我觉得还不如<code>rm public -r</code></li>
+<li><code>hexo deploy</code>在public目录为空的时候，会进行生成</li>
+</ul>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://ykrc17.github.io/互联网/2016/04/21-使用Hexo和GithubPages搭建博客/" data-id="civgrbpn0002do4v5jzx0abej" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="/互联网/2016/04/21-使用Hexo和GithubPages搭建博客/#comments" class="article-comment-link">评论</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-2016/03/08-设计模式（二）结构型" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/Java/2016/03/08-设计模式（二）结构型/">设计模式（二）结构型</a>
+        </h1>
+    
+
+                <div class="article-meta">
+                    
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/Java/2016/03/08-设计模式（二）结构型/">
+            <time datetime="2016-03-07T16:00:00.000Z" itemprop="datePublished">2016-03-08</time>
+        </a>
+    </div>
+
+
+                    
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Java/">Java</a>
+    </div>
+
+                    
+                </div>
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h3 id="1、适配器模式（Adapter）"><a href="#1、适配器模式（Adapter）" class="headerlink" title="1、适配器模式（Adapter）"></a>1、适配器模式（Adapter）</h3><p>有两个类（客户类和被适配类）具有不兼容的接口，你想让他们一起工作，就需要一个适配器类来封装、转换被适配类的接口，让他能在客户类中使用。</p>
+<p>有3类角色：</p>
+<ul>
+<li><code>Client</code><br>客户类，接口与被适配类不兼容</li>
+<li><code>Adaptee</code><br>被适配类，接口与客户类不兼容</li>
+<li><code>Adapter</code><br>适配器，被客户类使用，在适配器中转换被适配类的接口</li>
+</ul>
+<p>分为两类：</p>
+<ul>
+<li>类适配器<br>比如适配器继承<code>Activity</code>实现<code>View.onClickListener</code>，View为client，被称为类适配器。</li>
+<li>对象适配器<br>比如<code>RecyclerView.Adapter</code>，被适配类的实例被包含在适配器中，所以被称为对象适配器。</li>
+</ul>
+<p>注：对象适配器出现得更多，因为适配器可以有一个父类<code>BaseAdapter</code>，比起类适配器更加灵活。</p>
+<h3 id="2、桥接模式（Bridge）"><a href="#2、桥接模式（Bridge）" class="headerlink" title="2、桥接模式（Bridge）"></a>2、桥接模式（Bridge）</h3><p>当有一个类，他的某些属性容易变化，就用桥接模式将抽象和实现剥离，让两者可以分开变化。</p>
+<p>有4类角色：</p>
+<ul>
+<li><code>Abstraction</code><br>包含一个Implementor的实例的抽象类，功能交由Implementor解决</li>
+<li><code>RefinedAbstraction</code><br>抽象的泛化、实现</li>
+<li><code>Implementor</code><br>一个抽象类或者接口</li>
+<li><code>ContreteImplementor</code><br>Implementor的泛化、实现</li>
+</ul>
+<p>注：客户端里不容易出现那么善变的类，觉得用不上= =</p>
+<h3 id="3、组合模式（Composite）"><a href="#3、组合模式（Composite）" class="headerlink" title="3、组合模式（Composite）"></a>3、组合模式（Composite）</h3><p>将多个相似的对象组合，使他们能被一起操作。</p>
+<p>例子：<code>ViewGroup</code>就是组合模式</p>
+<p>有3个角色：</p>
+<ul>
+<li><code>Component</code><br>组合中，每个元素的抽象</li>
+<li><code>Leaf</code><br>组合中，每个元素的实现。可以有很多Leaf</li>
+<li><code>Composite</code><br>元素的组合，继承自Component。不同的是，新增了add和remove方法，可以增加删除元素。调用父类的方法时，会对所有元素调用一遍该方法。</li>
+</ul>
+<p>注：当Component的公共方法很多时，Composite也会跟着变复杂</p>
+<h3 id="4、装饰模式（Decorator）"><a href="#4、装饰模式（Decorator）" class="headerlink" title="4、装饰模式（Decorator）"></a>4、装饰模式（Decorator）</h3><p>动态的给对象的方法添加功能。比起继承然后重写方法，更为灵活。</p>
+<p>例子：Java的Writer</p>
+<p>有4个角色：</p>
+<ul>
+<li><code>Component</code><br>被装饰的类</li>
+<li><code>ConcreteComponent</code><br>Component的实现或泛化</li>
+<li><code>Decorator</code><br>Component的装饰器，继承自Component，构造函数参数为Component</li>
+<li><code>ConcreteDecorator</code><br>Decorator的实现或泛化</li>
+</ul>
+<p>注：与组合模式一样，当Component的公共方法很多时，Decorator工作量也会增加。用法与桥接模式类似，桥接跟适用于变化，装饰器更适用于扩展。</p>
+<h3 id="5、外观模式（Facade）"><a href="#5、外观模式（Facade）" class="headerlink" title="5、外观模式（Facade）"></a>5、外观模式（Facade）</h3><p>为大量的代码提供简单的接口。说简单点，就是子系统的外部方法。<br>外观模式太常用了，就比如MVC，M层和C层就都是外观模式，只要管好自己，别人干啥跟自己没关系了。</p>
+<h3 id="6、享元模式（Flyweight）"><a href="#6、享元模式（Flyweight）" class="headerlink" title="6、享元模式（Flyweight）"></a>6、享元模式（Flyweight）</h3><p>减少创建和修改元素的代价，重复使用元素。<br>通常使用哈希表以键值对的形式来存储元素，当元素再次被创建时，从哈希表中获取元素而非真的创建。</p>
+<p>例子：<code>RecyclerView</code>，<code>UniversalImageLoader</code></p>
+<h3 id="7、代理模式（Proxy）"><a href="#7、代理模式（Proxy）" class="headerlink" title="7、代理模式（Proxy）"></a>7、代理模式（Proxy）</h3><p>作为另一个类的占位符，以提供访问控制、减少消耗、减少复杂性。</p>
+<p>有3个角色：</p>
+<ul>
+<li><code>Subject</code><br>Proxy和RealSubject共同的父类</li>
+<li><code>RealSubject</code><br>Subject的泛化、实现</li>
+<li><code>Proxy</code><br>与RealSubject有同样的接口</li>
+</ul>
+<p>注：很像装饰模式，但是有以下不同点：</p>
+<p>代理模式，Proxy与RealSubject有相同的接口，和相同的构造方法。但是装饰模式的构造方法的参数一定是父类。<br>代理模式只能是一个类的实例的代理。但是装饰模式，只要是父类的子类，都可以被装饰。</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://ykrc17.github.io/Java/2016/03/08-设计模式（二）结构型/" data-id="civgrbpms0024o4v5742s7l94" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="/Java/2016/03/08-设计模式（二）结构型/#comments" class="article-comment-link">评论</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-2016/03/09-设计模式（三）行为型" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/Java/2016/03/09-设计模式（三）行为型/">设计模式（三）行为型</a>
+        </h1>
+    
+
+                <div class="article-meta">
+                    
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/Java/2016/03/09-设计模式（三）行为型/">
+            <time datetime="2016-03-07T16:00:00.000Z" itemprop="datePublished">2016-03-08</time>
+        </a>
+    </div>
+
+
+                    
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Java/">Java</a>
+    </div>
+
+                    
+                </div>
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h3 id="1、职责链模式（Chain-of-responsibility）"><a href="#1、职责链模式（Chain-of-responsibility）" class="headerlink" title="1、职责链模式（Chain-of-responsibility）"></a>1、职责链模式（Chain-of-responsibility）</h3><p>当你有一个命令，以及多个处理对象，却不知道用哪个对象处理时，用职责链，一直传递直到传到那个类。<br>当你的if-else或switch很臃肿的时候，可以使用职责链模式。</p>
+<p>有2个角色：</p>
+<ul>
+<li><code>command objects</code><br>一个命令</li>
+<li><code>processing objects</code><br>一个处理对象，包含了另一个processing object。当不满足命令的条件时，传递命令给另一个。</li>
+</ul>
+<p>注：需要把switch中的default和finally也考虑进去。</p>
+<h3 id="2、命令模式（Command）"><a href="#2、命令模式（Command）" class="headerlink" title="2、命令模式（Command）"></a>2、命令模式（Command）</h3><p>将行为和参数封装到一个类里。</p>
+<p>例子：</p>
+<ul>
+<li>大名鼎鼎的Intent用到了一部分命令模式，其实可以再封装的</li>
+<li>网络请求，如果是短连接，则都是命令模式</li>
+</ul>
+<p>有3个角色：</p>
+<ul>
+<li><code>Invoker</code><br>负责唤起Command的类，对于Intent来说，就是Context</li>
+<li><code>Command</code><br>一个命令，包含行为以及可选的参数</li>
+<li><code>ConcreteCommand</code><br>Command类的子类</li>
+</ul>
+<h3 id="3、解释器模式（Interpreter）"><a href="#3、解释器模式（Interpreter）" class="headerlink" title="3、解释器模式（Interpreter）"></a>3、解释器模式（Interpreter）</h3><p>定义一种语言的语法，然后用解释器解释他。<br>解释器模式中使用了组合模式，</p>
+<p>有3个角色：</p>
+<ul>
+<li><code>Expression</code><br>所有Expression都有方法interprete。</li>
+<li><code>TerminalExpression</code><br>继承Expression。负责存储Expression中的信息。也许是行为，也许是数据。</li>
+<li><code>NonterminalExpression</code><br>继承Expression，同时也是Expression的组合。负责解释Expression</li>
+</ul>
+<p>注：你真的会有需要解释语言的时候吗。</p>
+<h3 id="4、迭代器模式（Iterator）"><a href="#4、迭代器模式（Iterator）" class="headerlink" title="4、迭代器模式（Iterator）"></a>4、迭代器模式（Iterator）</h3><p>按顺序访问一个数据结构，却没有暴露数据结构。</p>
+<p>例子：</p>
+<ul>
+<li>Java自带的Iterator</li>
+<li>SQLiter的Cursor</li>
+</ul>
+<p>注：我需要讲什么吗，Java都自带了</p>
+<h3 id="5、中介者模式（Mediator）"><a href="#5、中介者模式（Mediator）" class="headerlink" title="5、中介者模式（Mediator）"></a>5、中介者模式（Mediator）</h3><p>降低一组类的耦合，用中介者管理他们之间的交互。</p>
+<p>有4个角色</p>
+<ul>
+<li><code>Mediator</code>和<code>ConcreteMediator</code><br>包含多个Colleague实例</li>
+<li><code>Colleague</code>和<code>ConcreteColleague</code><br>包含一个Mediator实例，用来跟其他Colleague交互</li>
+</ul>
+<p>注：Mediator和Colleague之间，你中有我，我中有你，只有Colleague之间交互复杂到一定程度，才会用到吧。</p>
+<h3 id="6、备忘录模式（Memento）"><a href="#6、备忘录模式（Memento）" class="headerlink" title="6、备忘录模式（Memento）"></a>6、备忘录模式（Memento）</h3><p>可以记录一个对象的之前的状态，并且可以恢复。</p>
+<p>例子：savedInstanceState</p>
+<p>有2个角色：</p>
+<ul>
+<li><code>Originator</code><br>有内部类Memento，用来备份、恢复</li>
+<li><code>Memento</code><br>负责记录旧的数据</li>
+</ul>
+<h3 id="7、观察者模式（Observer）"><a href="#7、观察者模式（Observer）" class="headerlink" title="7、观察者模式（Observer）"></a>7、观察者模式（Observer）</h3><p>允许Observer监听一个事件。</p>
+<p>例子：满地都是</p>
+<p>有2个角色：</p>
+<ul>
+<li><code>Subject</code><br>被事件触发时调用Observer</li>
+<li><code>Observer</code><br>在Subject中注册Observer</li>
+</ul>
+<h3 id="8、状态模式（State）"><a href="#8、状态模式（State）" class="headerlink" title="8、状态模式（State）"></a>8、状态模式（State）</h3><p>允许一个对象，当他的状态转变时，他的行为也变了。当参数不符合当前状态时，会转变状态。</p>
+<p>有2个角色：</p>
+<ul>
+<li><code>Context</code><br>存储当前状态</li>
+<li><code>State</code>和<code>ContreteState</code><br>存储状态名，以及对应的行为</li>
+</ul>
+<h3 id="9、策略模式（Strategy）"><a href="#9、策略模式（Strategy）" class="headerlink" title="9、策略模式（Strategy）"></a>9、策略模式（Strategy）</h3><p>定义一系列的算法，将他们封装，使他们在运行时可以自由切换。除了不会自动变状态外，与状态模式相同。</p>
+<p>有2个角色：</p>
+<ul>
+<li><code>Context</code></li>
+<li><code>Strategy</code>和<code>ContreteStrategy</code></li>
+</ul>
+<p>注：状态模式只能自动变，策略模式只能手动变。</p>
+<h3 id="10、模板方法模式（Template-method）"><a href="#10、模板方法模式（Template-method）" class="headerlink" title="10、模板方法模式（Template method）"></a>10、模板方法模式（Template method）</h3><p>在一个抽象类中定义算法的骨架，在子类中实现他。</p>
+<p>有2个角色：</p>
+<ul>
+<li><code>AbstractClass</code><br>包含public final的模板方法，以及一些抽象发放，模板方法不可被重写。</li>
+<li><code>ConcreteClass</code><br>实现父类的抽象方法</li>
+</ul>
+<p>注：不像之前的那些设计模式，是让代码更灵活，模板方法模式让代码更符合约束。</p>
+<h3 id="11、访问者模式（Visitor）"><a href="#11、访问者模式（Visitor）" class="headerlink" title="11、访问者模式（Visitor）"></a>11、访问者模式（Visitor）</h3><p>将算法的一部分从类中剥离，而又不影响层次结构。</p>
+<p>有2类角色：</p>
+<ul>
+<li><code>Component</code><br>有accept方法，可以接受Visitor</li>
+<li><code>Visitor</code>和<code>ConcreteVisitor</code><br>包含了算法，在accept中被调用。只要更换Visitor，行为就会改变。</li>
+</ul>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://ykrc17.github.io/Java/2016/03/09-设计模式（三）行为型/" data-id="civgrbpmu0028o4v5y0yyxmeg" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="/Java/2016/03/09-设计模式（三）行为型/#comments" class="article-comment-link">评论</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-2016/03/07-ECMAScript5特性-迭代器与生成器" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/JavaScript/2016/03/07-ECMAScript5特性-迭代器与生成器/">ECMAScript5特性-迭代器与生成器</a>
+        </h1>
+    
+
+                <div class="article-meta">
+                    
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/JavaScript/2016/03/07-ECMAScript5特性-迭代器与生成器/">
+            <time datetime="2016-03-06T16:00:00.000Z" itemprop="datePublished">2016-03-07</time>
+        </a>
+    </div>
+
+
+                    
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/JavaScript/">JavaScript</a>
+    </div>
+
+                    
+                </div>
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <blockquote>
+<p>今天随便翻东西，翻到了function*()。这个函数后面竟然有个星号，莫非是指针？抱着怀疑的心态，上网查到了迭代器和生成器。</p>
+</blockquote>
+<h3 id="迭代器-iterator"><a href="#迭代器-iterator" class="headerlink" title="迭代器(iterator)"></a>迭代器(iterator)</h3><p>第一次听到迭代器，还是在学习C++的时候。当时学到List这个概念，List是一个线性的存储结构，他需要一个方法，来遍历里面的内容。当时有两种方法，一个是用for循环，用索引遍历；另一个就是迭代器。<br>迭代器，指向List中的某一个元素，当调用迭代器的next()方法时，指向并返回下一个元素。<br>在ECMAScript中，迭代器的功能更为恐怖，他会遍历对象(不只是List)中的每一个元素。每一个对象的元素，都会被返回。</p>
+<h3 id="简单的JSON对象"><a href="#简单的JSON对象" class="headerlink" title="简单的JSON对象"></a>简单的JSON对象</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> me = &#123;<span class="attr">name</span>:<span class="string">"yk"</span>,<span class="attr">age</span>:<span class="number">21</span>&#125;</div><div class="line"><span class="keyword">var</span> it = Iterator(me)</div></pre></td></tr></table></figure>
+<p>it即为me对象的迭代器，it.next()依次返回name:”yk”、age:21，第三次则会报错。</p>
+<h3 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="string">"jiang"</span>,<span class="string">"hu"</span>,<span class="string">"xi"</span>]</div><div class="line"><span class="keyword">var</span> it = Iterator(arr)</div></pre></td></tr></table></figure>
+<p>it.next()会返回1:”jiang”、2:”hu”、3:”xi”</p>
+<h3 id="function"><a href="#function" class="headerlink" title="function*"></a>function*</h3><p>对，你没听错，迭代器能让函数返回多个值！这已经颠覆三观了。<br>当然这里的函数跟一般函数不同，我们称他为生成器(generator)，生成器能返回多个值，他会生成一个迭代器，能使用到所有返回值。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> gen = <span class="function"><span class="keyword">function</span>*(<span class="params"></span>)</span>&#123;</div><div class="line"><span class="keyword">yield</span> <span class="number">1</span></div><div class="line"><span class="keyword">yield</span> <span class="number">2</span></div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> it = gen()</div></pre></td></tr></table></figure></p>
+<p>it.next()会依次返回1、2，这里的function即表示生成器，调用function()会生成迭代器。<br>yield会使函数内的操作暂停，直到再次调用it.next()</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://ykrc17.github.io/JavaScript/2016/03/07-ECMAScript5特性-迭代器与生成器/" data-id="civgrbpmx002bo4v56msu4zqd" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="/JavaScript/2016/03/07-ECMAScript5特性-迭代器与生成器/#comments" class="article-comment-link">评论</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-2016/03/05-设计模式（一）创建型模式" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/Java/2016/03/05-设计模式（一）创建型模式/">设计模式（一）创建型模式</a>
+        </h1>
+    
+
+                <div class="article-meta">
+                    
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/Java/2016/03/05-设计模式（一）创建型模式/">
+            <time datetime="2016-03-04T16:00:00.000Z" itemprop="datePublished">2016-03-05</time>
+        </a>
+    </div>
+
+
+                    
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Java/">Java</a>
+    </div>
+
+                    
+                </div>
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <blockquote>
+<p>设计模式可以让代码具有复用性，遇到问题，可以先考虑能不能用设计模式解决。而且经过多年来的使用和优化，设计模式显得简单可靠。<br>设计模式被大致分为三类，创建型、结构型和行为型。这里先讲讲创建型。</p>
+</blockquote>
+<h3 id="1、抽象工厂模式（Abstract-Factory）"><a href="#1、抽象工厂模式（Abstract-Factory）" class="headerlink" title="1、抽象工厂模式（Abstract Factory）"></a>1、抽象工厂模式（Abstract Factory）</h3><p>一个抽象类（或接口），可以构造一系列同一风格的类的实例。<br>当你需要一个新的风格的对象时，再次实现这个抽象工厂就行了。<br>缺点：</p>
+<ul>
+<li>并不是经常需要一系列的对象</li>
+</ul>
+<h3 id="2、建造者模式（Builder）"><a href="#2、建造者模式（Builder）" class="headerlink" title="2、建造者模式（Builder）"></a>2、建造者模式（Builder）</h3><p>当一个类的构造过程十分复杂，或者比较容易出错时，可以考虑将类的构造从类中剥离出来。<br>例子：</p>
+<ul>
+<li>Android中的<code>AlertDialog.Builder</code></li>
+</ul>
+<p>优点：</p>
+<ul>
+<li>将过程简化</li>
+<li>比构造方法更为安全</li>
+<li>可以使用链式调用</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>无法被继承，子类需要重新写</li>
+<li>只能构造一个特定的类</li>
+</ul>
+<h3 id="3、工厂方法模式（Factory-method）"><a href="#3、工厂方法模式（Factory-method）" class="headerlink" title="3、工厂方法模式（Factory method）"></a>3、工厂方法模式（Factory method）</h3><p>通过一个方法来构造实例，方法通过参数来判断该构造哪个类，返回哪个实例。<br>工厂方法分为两种，一种是内部工厂方法，一种是静态工厂方法。  </p>
+<p>例子：</p>
+<ul>
+<li>Activity中的<code>getSystemService()</code>方法</li>
+<li>Resouce中的<code>getDrawable()</code>方法</li>
+<li>Fragment中的<code>newInstance()</code>方法，属于静态工厂方法模式</li>
+</ul>
+<p>优点：</p>
+<ul>
+<li>扩展时，修改工厂方法就行了</li>
+<li>专注于获取实例，不需要在乎是哪个类的实例</li>
+<li>静态工厂方法比构造方法更为安全</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>静态工厂方法不能被继承，子类需要重新写一遍（内部方法可以继承）<h3 id="4、原型模式（Prototype）"><a href="#4、原型模式（Prototype）" class="headerlink" title="4、原型模式（Prototype）"></a>4、原型模式（Prototype）</h3></li>
+</ul>
+<p>通过克隆原型，来构造类的实例</p>
+<p>缺点：</p>
+<ul>
+<li>只要实现<code>Cloneable</code>就等于是原型模式了，随处可见，真的还算是模式么= =<h3 id="5、单例模式（Singleton）"><a href="#5、单例模式（Singleton）" class="headerlink" title="5、单例模式（Singleton）"></a>5、单例模式（Singleton）</h3></li>
+</ul>
+<p>保证一个类只有一个实例，使用静态。常用于像工厂这样，容易被重复使用，实例间又没有太大的区别的场景。<br>分为两种初始化方式，一种是饿汉式初始化，类被加载时或应用启动时初始化；另一种是懒汉式初始化，类被第一次使用时初始化实例。  </p>
+<p>例子：</p>
+<ul>
+<li>Picasso库</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>需要注意在编写时注意多线程下，被多次初始化的问题</li>
+</ul>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://ykrc17.github.io/Java/2016/03/05-设计模式（一）创建型模式/" data-id="civgrbpmt0026o4v5zl0yqlif" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="/Java/2016/03/05-设计模式（一）创建型模式/#comments" class="article-comment-link">评论</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-2016/02/20-Atom插件(至20160220)" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/Atom/2016/02/20-Atom插件(至20160220)/">Atom插件(至20160220)</a>
+        </h1>
+    
+
+                <div class="article-meta">
+                    
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/Atom/2016/02/20-Atom插件(至20160220)/">
+            <time datetime="2016-02-19T16:00:00.000Z" itemprop="datePublished">2016-02-20</time>
+        </a>
+    </div>
+
+
+                    
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Atom/">Atom</a>
+    </div>
+
+                    
+                </div>
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <blockquote>
+<p>这年头编辑器没有几个插件，都不敢叫自己编辑器，这里就介绍一点自己常用的Atom插件。</p>
+</blockquote>
+<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><ul>
+<li>安装Atom，<a href="https://atom.io/" target="_blank" rel="external">官网点我</a></li>
+<li><p>安装完Atom后，同时也会安装好apm（apm不是那个每秒动几次，是Atom Package Manager），基本用法与npm一致<br>安装包的方法是</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">apm install &#123;你的包名&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>（可选）设置代理，因为墙的存在，最好翻一下墙，否则可以装插件装一整天<br>使用方法  </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">apm config <span class="built_in">set</span> proxy &#123;协议://地址&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>接下来就是正片了</p>
+<h3 id="效率工具"><a href="#效率工具" class="headerlink" title="效率工具"></a>效率工具</h3></li>
+<li><p>minimap<br>在编辑器右边显示代码的概览，就像sublime的一样</p>
+</li>
+<li><p>atom-beautify<br>可以格式化代码，让代码变得美观</p>
+</li>
+<li><p>markdown-scroll-sync<br>在编辑markdown时，markdown的预览会滚动到你编辑的那行</p>
+</li>
+</ul>
+<h3 id="美观"><a href="#美观" class="headerlink" title="美观"></a>美观</h3><ul>
+<li>file-icons<br>为文件添加图标，不同类型的文件有不同的图标</li>
+<li><p>activate-power-mode<br>安装这个包之后，在敲代码时便会有震动反馈</p>
+<h3 id="语言类"><a href="#语言类" class="headerlink" title="语言类"></a>语言类</h3></li>
+<li><p>atom-jade<br>为Atom添加对Jade的支持。Jade是一款模板语言，无缝衔接javascript</p>
+</li>
+<li>api-workbench<br>为Atom添加RAML的支持，可以编写RESTful API的文档</li>
+</ul>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://ykrc17.github.io/Atom/2016/02/20-Atom插件(至20160220)/" data-id="civgrbpmr0021o4v5xa19jx3p" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="/Atom/2016/02/20-Atom插件(至20160220)/#comments" class="article-comment-link">评论</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <nav id="page-nav">
+        <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/2/">下一页 &raquo;</a>
+    </nav>
+</section>
+            
+                <aside id="sidebar">
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Android/">Android</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Atom/">Atom</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/">Java</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/JavaScript/">JavaScript</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Kotlin/">Kotlin</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Node-js/">Node.js</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/PHP/">PHP</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Windows/">Windows</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/git/">git</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/互联网/">互联网</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/软件/">软件</a><span class="category-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/git/2016/11/git提交信息前添加分支名/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/git/">git</a></p>
+                            <p class="item-title"><a href="/git/2016/11/git提交信息前添加分支名/" class="title">git提交信息前添加分支名</a></p>
+                            <p class="item-date"><time datetime="2016-11-12T16:00:00.000Z" itemprop="datePublished">2016-11-13</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/互联网/2016/06/19-浏览器首页竟然被劫持了/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/互联网/">互联网</a></p>
+                            <p class="item-title"><a href="/互联网/2016/06/19-浏览器首页竟然被劫持了/" class="title">浏览器主页竟然被劫持了</a></p>
+                            <p class="item-date"><time datetime="2016-06-18T16:00:00.000Z" itemprop="datePublished">2016-06-19</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/软件/2016/05/07-PhotoshopCC2014启动界面修改/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/2016-5-7.01.png)" alt="Photoshop CC 2014启动界面修改" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/软件/">软件</a></p>
+                            <p class="item-title"><a href="/软件/2016/05/07-PhotoshopCC2014启动界面修改/" class="title">Photoshop CC 2014启动界面修改</a></p>
+                            <p class="item-date"><time datetime="2016-05-06T16:00:00.000Z" itemprop="datePublished">2016-05-07</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/Android/2016/04/29-如何判断一个页面是WebView/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/2016-4-29.01.png)" alt="如何判断一个页面是WebView" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Android/">Android</a></p>
+                            <p class="item-title"><a href="/Android/2016/04/29-如何判断一个页面是WebView/" class="title">如何判断一个页面是WebView</a></p>
+                            <p class="item-date"><time datetime="2016-04-28T16:00:00.000Z" itemprop="datePublished">2016-04-29</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/互联网/2016/04/21-使用Hexo和GithubPages搭建博客/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/互联网/">互联网</a></p>
+                            <p class="item-title"><a href="/互联网/2016/04/21-使用Hexo和GithubPages搭建博客/" class="title">使用Hexo和GithubPages搭建博客</a></p>
+                            <p class="item-date"><time datetime="2016-04-20T16:00:00.000Z" itemprop="datePublished">2016-04-21</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">归档</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">三月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">二月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">十一月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">十月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">6</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    
+        
+    
+        
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">链接</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+    
+    <div id="toTop" class="fa fa-chevron-up"></div>
+</aside>
+            
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2016 Yu Kuai<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2096149"></script>
+
+
+
+    
+        <script src="/vendor/fancybox/jquery.fancybox.pack.js"></script>
+    
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>

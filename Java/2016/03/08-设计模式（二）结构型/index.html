@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+    <meta charset="utf-8">
+    
+    <title>设计模式（二）结构型 | ykrc17</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="1、适配器模式（Adapter）有两个类（客户类和被适配类）具有不兼容的接口，你想让他们一起工作，就需要一个适配器类来封装、转换被适配类的接口，让他能在客户类中使用。
+有3类角色：
+
+Client客户类，接口与被适配类不兼容
+Adaptee被适配类，接口与客户类不兼容
+Adapter适配器，被客户类使用，在适配器中转换被适配类的接口
+
+分为两类：
+
+类适配器比如适配器继承Activity实现Vie">
+<meta property="og:type" content="article">
+<meta property="og:title" content="设计模式（二）结构型">
+<meta property="og:url" content="http://ykrc17.github.io/Java/2016/03/08-设计模式（二）结构型/index.html">
+<meta property="og:site_name" content="ykrc17">
+<meta property="og:description" content="1、适配器模式（Adapter）有两个类（客户类和被适配类）具有不兼容的接口，你想让他们一起工作，就需要一个适配器类来封装、转换被适配类的接口，让他能在客户类中使用。
+有3类角色：
+
+Client客户类，接口与被适配类不兼容
+Adaptee被适配类，接口与客户类不兼容
+Adapter适配器，被客户类使用，在适配器中转换被适配类的接口
+
+分为两类：
+
+类适配器比如适配器继承Activity实现Vie">
+<meta property="og:updated_time" content="2016-11-13T13:35:47.610Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="设计模式（二）结构型">
+<meta name="twitter:description" content="1、适配器模式（Adapter）有两个类（客户类和被适配类）具有不兼容的接口，你想让他们一起工作，就需要一个适配器类来封装、转换被适配类的接口，让他能在客户类中使用。
+有3类角色：
+
+Client客户类，接口与被适配类不兼容
+Adaptee被适配类，接口与客户类不兼容
+Adapter适配器，被客户类使用，在适配器中转换被适配类的接口
+
+分为两类：
+
+类适配器比如适配器继承Activity实现Vie">
+    
+
+    
+
+    
+        <link rel="icon" href="/images/avatar.jpg" />
+    
+
+    <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/vendor/open-sans/styles.css">
+    <link rel="stylesheet" href="/vendor/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/vendor/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/vendor/fancybox/jquery.fancybox.css">
+    
+    
+    
+    
+
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                
+                <span class="site-title">ykrc17</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/.">首页</a>
+                
+                    <a class="main-nav-link" href="/archives">归档</a>
+                
+                    <a class="main-nav-link" href="/categories">分类</a>
+                
+                    <a class="main-nav-link" href="/tags">标签</a>
+                
+                    <a class="main-nav-link" href="/about">关于</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="/images/avatar.jpg" />
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/.">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">归档</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">分类</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">标签</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">关于</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+                
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="/images/avatar.jpg" />
+            <h2 id="name">ykrc17</h2>
+            <h3 id="title">安卓开发</h3>
+            <span id="location"><i class="fa fa-map-marker"></i>中国 · 上海</span>
+            <a id="follow" target="_blank" href="https://github.com/ykrc17/">关注我</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                43
+                <span>文章</span>
+            </div>
+            <div class="article-info-block">
+                0
+                <span>标签</span>
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    <td><a href="https://github.com/ykrc17" target="_blank" title="github"><i class="fa fa-github"></i></a></td>
+                    
+                    <td><a href="http://weibo.com/u/2845419073" target="_blank" title="weibo"><i class="fa fa-weibo"></i></a></td>
+                    
+                    <td><a href="http://steamcommunity.com/profiles/76561198104235555/" target="_blank" title="steam"><i class="fa fa-steam"></i></a></td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            <section id="main"><article id="post-2016/03/08-设计模式（二）结构型" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+            设计模式（二）结构型
+        </h1>
+    
+
+                <div class="article-meta">
+                    
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/Java/2016/03/08-设计模式（二）结构型/">
+            <time datetime="2016-03-07T16:00:00.000Z" itemprop="datePublished">2016-03-08</time>
+        </a>
+    </div>
+
+
+                    
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Java/">Java</a>
+    </div>
+
+                    
+                </div>
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h3 id="1、适配器模式（Adapter）"><a href="#1、适配器模式（Adapter）" class="headerlink" title="1、适配器模式（Adapter）"></a>1、适配器模式（Adapter）</h3><p>有两个类（客户类和被适配类）具有不兼容的接口，你想让他们一起工作，就需要一个适配器类来封装、转换被适配类的接口，让他能在客户类中使用。</p>
+<p>有3类角色：</p>
+<ul>
+<li><code>Client</code><br>客户类，接口与被适配类不兼容</li>
+<li><code>Adaptee</code><br>被适配类，接口与客户类不兼容</li>
+<li><code>Adapter</code><br>适配器，被客户类使用，在适配器中转换被适配类的接口</li>
+</ul>
+<p>分为两类：</p>
+<ul>
+<li>类适配器<br>比如适配器继承<code>Activity</code>实现<code>View.onClickListener</code>，View为client，被称为类适配器。</li>
+<li>对象适配器<br>比如<code>RecyclerView.Adapter</code>，被适配类的实例被包含在适配器中，所以被称为对象适配器。</li>
+</ul>
+<p>注：对象适配器出现得更多，因为适配器可以有一个父类<code>BaseAdapter</code>，比起类适配器更加灵活。</p>
+<h3 id="2、桥接模式（Bridge）"><a href="#2、桥接模式（Bridge）" class="headerlink" title="2、桥接模式（Bridge）"></a>2、桥接模式（Bridge）</h3><p>当有一个类，他的某些属性容易变化，就用桥接模式将抽象和实现剥离，让两者可以分开变化。</p>
+<p>有4类角色：</p>
+<ul>
+<li><code>Abstraction</code><br>包含一个Implementor的实例的抽象类，功能交由Implementor解决</li>
+<li><code>RefinedAbstraction</code><br>抽象的泛化、实现</li>
+<li><code>Implementor</code><br>一个抽象类或者接口</li>
+<li><code>ContreteImplementor</code><br>Implementor的泛化、实现</li>
+</ul>
+<p>注：客户端里不容易出现那么善变的类，觉得用不上= =</p>
+<h3 id="3、组合模式（Composite）"><a href="#3、组合模式（Composite）" class="headerlink" title="3、组合模式（Composite）"></a>3、组合模式（Composite）</h3><p>将多个相似的对象组合，使他们能被一起操作。</p>
+<p>例子：<code>ViewGroup</code>就是组合模式</p>
+<p>有3个角色：</p>
+<ul>
+<li><code>Component</code><br>组合中，每个元素的抽象</li>
+<li><code>Leaf</code><br>组合中，每个元素的实现。可以有很多Leaf</li>
+<li><code>Composite</code><br>元素的组合，继承自Component。不同的是，新增了add和remove方法，可以增加删除元素。调用父类的方法时，会对所有元素调用一遍该方法。</li>
+</ul>
+<p>注：当Component的公共方法很多时，Composite也会跟着变复杂</p>
+<h3 id="4、装饰模式（Decorator）"><a href="#4、装饰模式（Decorator）" class="headerlink" title="4、装饰模式（Decorator）"></a>4、装饰模式（Decorator）</h3><p>动态的给对象的方法添加功能。比起继承然后重写方法，更为灵活。</p>
+<p>例子：Java的Writer</p>
+<p>有4个角色：</p>
+<ul>
+<li><code>Component</code><br>被装饰的类</li>
+<li><code>ConcreteComponent</code><br>Component的实现或泛化</li>
+<li><code>Decorator</code><br>Component的装饰器，继承自Component，构造函数参数为Component</li>
+<li><code>ConcreteDecorator</code><br>Decorator的实现或泛化</li>
+</ul>
+<p>注：与组合模式一样，当Component的公共方法很多时，Decorator工作量也会增加。用法与桥接模式类似，桥接跟适用于变化，装饰器更适用于扩展。</p>
+<h3 id="5、外观模式（Facade）"><a href="#5、外观模式（Facade）" class="headerlink" title="5、外观模式（Facade）"></a>5、外观模式（Facade）</h3><p>为大量的代码提供简单的接口。说简单点，就是子系统的外部方法。<br>外观模式太常用了，就比如MVC，M层和C层就都是外观模式，只要管好自己，别人干啥跟自己没关系了。</p>
+<h3 id="6、享元模式（Flyweight）"><a href="#6、享元模式（Flyweight）" class="headerlink" title="6、享元模式（Flyweight）"></a>6、享元模式（Flyweight）</h3><p>减少创建和修改元素的代价，重复使用元素。<br>通常使用哈希表以键值对的形式来存储元素，当元素再次被创建时，从哈希表中获取元素而非真的创建。</p>
+<p>例子：<code>RecyclerView</code>，<code>UniversalImageLoader</code></p>
+<h3 id="7、代理模式（Proxy）"><a href="#7、代理模式（Proxy）" class="headerlink" title="7、代理模式（Proxy）"></a>7、代理模式（Proxy）</h3><p>作为另一个类的占位符，以提供访问控制、减少消耗、减少复杂性。</p>
+<p>有3个角色：</p>
+<ul>
+<li><code>Subject</code><br>Proxy和RealSubject共同的父类</li>
+<li><code>RealSubject</code><br>Subject的泛化、实现</li>
+<li><code>Proxy</code><br>与RealSubject有同样的接口</li>
+</ul>
+<p>注：很像装饰模式，但是有以下不同点：</p>
+<p>代理模式，Proxy与RealSubject有相同的接口，和相同的构造方法。但是装饰模式的构造方法的参数一定是父类。<br>代理模式只能是一个类的实例的代理。但是装饰模式，只要是父类的子类，都可以被装饰。</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://ykrc17.github.io/Java/2016/03/08-设计模式（二）结构型/" data-id="civgrbpms0024o4v5742s7l94" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="/Java/2016/03/08-设计模式（二）结构型/#comments" class="article-comment-link">评论</a>
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/互联网/2016/04/21-使用Hexo和GithubPages搭建博客/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">上一篇</strong>
+            <div class="article-nav-title">
+                
+                    使用Hexo和GithubPages搭建博客
+                
+            </div>
+        </a>
+    
+    
+        <a href="/Java/2016/03/09-设计模式（三）行为型/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">下一篇</strong>
+            <div class="article-nav-title">设计模式（三）行为型</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    <section id="comments">
+    
+        
+    <div id="uyan_frame"></div>
+
+    
+    </section>
+
+</section>
+            
+                <aside id="sidebar">
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Android/">Android</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Atom/">Atom</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/">Java</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/JavaScript/">JavaScript</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Kotlin/">Kotlin</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Node-js/">Node.js</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/PHP/">PHP</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Windows/">Windows</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/git/">git</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/互联网/">互联网</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/软件/">软件</a><span class="category-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/git/2016/11/git提交信息前添加分支名/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/git/">git</a></p>
+                            <p class="item-title"><a href="/git/2016/11/git提交信息前添加分支名/" class="title">git提交信息前添加分支名</a></p>
+                            <p class="item-date"><time datetime="2016-11-12T16:00:00.000Z" itemprop="datePublished">2016-11-13</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/互联网/2016/06/19-浏览器首页竟然被劫持了/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/互联网/">互联网</a></p>
+                            <p class="item-title"><a href="/互联网/2016/06/19-浏览器首页竟然被劫持了/" class="title">浏览器主页竟然被劫持了</a></p>
+                            <p class="item-date"><time datetime="2016-06-18T16:00:00.000Z" itemprop="datePublished">2016-06-19</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/软件/2016/05/07-PhotoshopCC2014启动界面修改/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/2016-5-7.01.png)" alt="Photoshop CC 2014启动界面修改" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/软件/">软件</a></p>
+                            <p class="item-title"><a href="/软件/2016/05/07-PhotoshopCC2014启动界面修改/" class="title">Photoshop CC 2014启动界面修改</a></p>
+                            <p class="item-date"><time datetime="2016-05-06T16:00:00.000Z" itemprop="datePublished">2016-05-07</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/Android/2016/04/29-如何判断一个页面是WebView/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/2016-4-29.01.png)" alt="如何判断一个页面是WebView" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Android/">Android</a></p>
+                            <p class="item-title"><a href="/Android/2016/04/29-如何判断一个页面是WebView/" class="title">如何判断一个页面是WebView</a></p>
+                            <p class="item-date"><time datetime="2016-04-28T16:00:00.000Z" itemprop="datePublished">2016-04-29</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/互联网/2016/04/21-使用Hexo和GithubPages搭建博客/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/互联网/">互联网</a></p>
+                            <p class="item-title"><a href="/互联网/2016/04/21-使用Hexo和GithubPages搭建博客/" class="title">使用Hexo和GithubPages搭建博客</a></p>
+                            <p class="item-date"><time datetime="2016-04-20T16:00:00.000Z" itemprop="datePublished">2016-04-21</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">归档</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">三月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">二月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">十一月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">十月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">6</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    
+        
+    
+        
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">链接</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+    
+    <div id="toTop" class="fa fa-chevron-up"></div>
+</aside>
+            
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2016 Yu Kuai<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2096149"></script>
+
+
+
+    
+        <script src="/vendor/fancybox/jquery.fancybox.pack.js"></script>
+    
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
